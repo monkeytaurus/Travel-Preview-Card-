@@ -1,29 +1,102 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+/* 
+- Regular 400 
+- Bold 700 
+*/
+
 *{ 
     box-sizing: border-box;
     margin: 0; 
     padding:0; 
 }   
 
+body{ 
+    background-color: black;
+    font-family: 'Playfair Display', serif;
+}
+
 .container{ 
     display: flex; 
     justify-content: center;
     align-items: center;
     height: 100vh; 
-    background-color: black; 
+    margin: 40px; 
 }
+
 
 
 
 
 .card{ 
-    background-color: white;
+    background-color: lightslategray;
     display: flex; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin: 30px; 
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.image{ 
+
+.image img { 
+    height: auto;
     width: 100%; 
+}
+
+h1{ 
+    font-weight: 700; 
+    margin: 10px 30px; 
+    text-align: center;
+    font-size: 18px;
+}
+
+p{ 
+    text-align: center;
+
+    margin: 10px 30px; 
+    /* margin-left: 20px; 
+    margin-right: 20px;
+    margin-bottom: 10px; */
+    font-size: 10px; 
+}
+
+.buttons a { 
+    display: inline-block;
+    font-size: 10px;
+    margin: 20px 5px;
+    
+}
+
+.learn-btn{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px 10px; 
+}
+
+.no-btn{ 
+    text-decoration: none;
+    color: black; 
+    border: 1px solid black; 
+    border-radius: 10px;
+    padding: 5px 10px; 
+
+}
+
+@media screen and (min-width: 768px){ 
+    .card{ 
+        flex-direction: row;
+        width: 100%; 
+    }
+    p{ 
+        margin:0; 
+        font-size: 16px;
+    }
+    .imag img{ 
+        height: 1000px; 
+        width: 100%; 
+    }
 }
