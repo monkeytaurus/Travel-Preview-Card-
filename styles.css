@@ -80,6 +80,18 @@ p{
 
 }
 
+.learn-btn:hover{ 
+    background-color: white; 
+    color: black;
+    transition: ease-in .25s; 
+}
+
+.no-btn:hover{ 
+    transition: ease-in .25s; 
+    background-color: white;
+    color: black;     
+}
+
 @media screen and (min-width: 768px){ 
     .card{ 
         flex-direction: row;
