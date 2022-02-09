@@ -21,12 +21,8 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh; 
-    margin: 40px; 
+    /* margin: 30px;  */
 }
-
-
-
-
 
 .card{ 
     background-color: lightslategray;
@@ -34,11 +30,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px; 
+    margin: 30px 40px; 
     border-radius: 10px;
     overflow: hidden;
 }
-
 
 .image img { 
     height: auto;
@@ -56,47 +51,71 @@ p{
     text-align: center;
 
     margin: 10px 30px; 
-    /* margin-left: 20px; 
-    margin-right: 20px;
-    margin-bottom: 10px; */
-    font-size: 10px; 
+    font-weight: 400;
+    font-size: 11px; 
 }
 
-.buttons a { 
-    display: inline-block;
+.buttons  { 
+    display: flex; 
     font-size: 10px;
     margin: 20px 5px;
-    
+    justify-content: center; 
 }
 
 .learn-btn{
     background-color: black;
     color: white;
     text-decoration: none;
-    border-radius: 10px;
-    padding: 5px 10px; 
+    border-radius: 20px;
+    padding: 10px 15px; 
+    margin-right: 40px;
 }
 
 .no-btn{ 
     text-decoration: none;
     color: black; 
     border: 1px solid black; 
-    border-radius: 10px;
-    padding: 5px 10px; 
+    border-radius: 20px;
+    padding: 10px 15px; 
 
 }
 
 @media screen and (min-width: 768px){ 
     .card{ 
         flex-direction: row;
+       
         width: 100%; 
+    }
+    h1{ 
+        font-size: 36px; 
     }
     p{ 
-        margin:0; 
+        
         font-size: 16px;
     }
-    .imag img{ 
-        height: 1000px; 
-        width: 100%; 
+
+    .image img { 
+        height: 420px; 
+        min-width: 300px;
+        vertical-align: center; 
+    }
+    
+    .buttons a{ 
+        font-size: 14px;
+    }
+    .learn-btn{ 
+        padding: 12px 35px; 
+    }
+
+    .no-btn{ 
+        padding: 12px 35px; 
+    }
+    
+}
+
+
+@media screen and (min-width: 1024px){ 
+    .card{ 
+        max-width: 1200px;
     }
 }
